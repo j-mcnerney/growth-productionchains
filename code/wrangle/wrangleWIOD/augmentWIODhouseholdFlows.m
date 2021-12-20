@@ -6,7 +6,7 @@ announceFunction()
 % Load WIOD data
 clear
 load('./wrangle/wrangleWIOD/WIOD.mat', 'WIOD')
-load('./wrangle/wrangleWIOD/WIOD_SEA.mat', 'WIOD_SEA')
+load('WIOD_SEA.mat', 'WIOD_SEA')
 
 % Get labor flows, capital flows, and value added for each industry in each
 % country

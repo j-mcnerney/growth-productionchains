@@ -12,7 +12,7 @@ announceFunction()
 % Load WIOD data
 clear
 load('./wrangle/wrangleWIOD/WIOD.mat', 'WIOD')
-load('./wrangle/wrangleWIOD/WIOD_SEA.mat', 'WIOD_SEA')
+load('WIOD_SEA.mat', 'WIOD_SEA')
 
 % Get price index for each industry and the household sector in each
 % country
