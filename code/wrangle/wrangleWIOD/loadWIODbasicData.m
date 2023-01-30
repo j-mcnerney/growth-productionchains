@@ -9,7 +9,7 @@ tic
 % Construct list of files to load
 dataDirectory = '../data/WIOD';
 fileList      = dir(dataDirectory);
-isDataFile    = contains({fileList.name}', 'wiot'); % grab just the data files
+isDataFile    = contains({fileList.name}', 'WIOT'); % grab just the data files
 fileList      = {fileList(isDataFile).name}';
 nFiles        = length(fileList);
 
