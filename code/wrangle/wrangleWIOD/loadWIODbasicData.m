@@ -8,14 +8,28 @@ tic
 
 % Construct list of files to load
 dataDirectory = '../data/WIOD';
-fileList      = dir(dataDirectory);
-isDataFile    = contains({fileList.name}', 'WIOT'); % grab just the data files
-fileList      = {fileList(isDataFile).name}';
-nFiles        = length(fileList);
 
-
-%fileList = {fileList.name}';
-%fileList = fileList(5:end)
+% Order files in chronological order
+fileList = [
+    {'WIOT95_ROW_Apr12.xlsx'}
+    {'WIOT96_ROW_Apr12.xlsx'}
+    {'WIOT97_ROW_Apr12.xlsx'}
+    {'WIOT98_ROW_Apr12.xlsx'}
+    {'WIOT99_ROW_Apr12.xlsx'}
+    {'WIOT00_ROW_Apr12.xlsx'}
+    {'WIOT01_ROW_Apr12.xlsx'}
+    {'WIOT02_ROW_Apr12.xlsx'}
+    {'WIOT03_ROW_Apr12.xlsx'}
+    {'WIOT04_ROW_Apr12.xlsx'}
+    {'WIOT05_ROW_Apr12.xlsx'}
+    {'WIOT06_ROW_Apr12.xlsx'}
+    {'WIOT07_ROW_Apr12.xlsx'}
+    {'WIOT08_ROW_Sep12.xlsx'}
+    {'WIOT09_ROW_Sep12.xlsx'}
+    {'WIOT10_ROW_Sep12.xlsx'}
+    {'WIOT11_ROW_Sep12.xlsx'}
+];
+nFiles = length(fileList);
 
 % Set parameters for grabbing data
 row0 = 7;  % These give the upper left cell for selecting the
