@@ -5,11 +5,11 @@ announceFunction()
 
 % Do analysis twice, once without and once with shuffling
 doShuffle = false;
-dispc( ['Gammas shuffled: ',string(doShuffle){1}] )
+dispc( 'Gammas shuffled: True' )
 gammaShuffleTest_sub( [mfilename,'.a'],WorldEconomy,gammaStats,returnStats,trophicStats,H_overTime,ap,pp,doShuffle)
 
 doShuffle = true;
-dispc( ['Gammas shuffled: ',string(doShuffle){1}] )
+dispc( 'Gammas shuffled: False' )
 gammaShuffleTest_sub( [mfilename,'.b'],WorldEconomy,gammaStats,returnStats,trophicStats,H_overTime,ap,pp,doShuffle)
 
 end
