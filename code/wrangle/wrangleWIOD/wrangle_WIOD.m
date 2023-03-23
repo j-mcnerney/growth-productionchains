@@ -61,7 +61,8 @@ save('./wrangle/wrangleWIOD/WIOD.mat', 'WIOD')
 % used by analyses.
 reply = input('Move saved WIOD mat file to ./save directory? (y/n)', 's');
 if strcmp(reply, 'y')
-   ! mv ./wrangle/wrangleWIOD/WIOD.mat ./save/WIOD.mat
+%    ! mv ./wrangle/wrangleWIOD/WIOD.mat ./save/WIOD.mat
+   movefile('./wrangle/wrangleWIOD/WIOD.mat', './save/WIOD.mat')
 else
    disp('Okay, WIOD.mat not moved. File in ./wrangle/wrangleWIOD/WIOD.mat')
 end
